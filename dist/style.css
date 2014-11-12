@@ -1,0 +1,70 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.chat {
+    height: 100vh;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+.chat ul {
+    overflow: auto;
+}
+
+.chat ul li {
+    -webkit-animation: fadeDown 0.25s ease both;
+            animation: fadeDown 0.25s ease both;
+    margin-bottom: .5em;
+}
+
+.chat ul li span {
+    display: inline-block;
+    background-color: #888;
+    color: white;
+    text-shadow: 0 1px #000;
+    line-height: 1em;
+    border-radius: 5px;
+    padding: .125em .25em;
+}
+
+.chat form {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5em;
+    background: #efefef;
+    border-top: 1px solid #ccc;
+}
+
+.chat form div {
+    position: relative;
+    margin-right: 10.5em;
+}
+
+.chat form input {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: .25em 0;
+}
+
+.chat form button {
+    display: inline-block;
+    width: 10em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+@-webkit-keyframes fadeDown {
+    0%{ opacity: 0; -webkit-transform: translateY(-2em); transform: translateY(-2em); }
+    100%{ opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    0%{ opacity: 0; -webkit-transform: translateY(-2em); transform: translateY(-2em); }
+    100%{ opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
