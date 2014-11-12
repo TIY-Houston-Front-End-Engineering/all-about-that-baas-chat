@@ -73,8 +73,7 @@
 
     var ChatHistory = Backbone.Firebase.Collection.extend({
         model: Chat,
-        firebase: new Firebase("https://matthiasak.firebaseio.com/chat").limitToLast(10),
-        initialize: function(){}
+        firebase: new Firebase("https://matthiasak.firebaseio.com/chat").limitToLast(10)
     });
 
     var MessageView = AsyncView.extend({
